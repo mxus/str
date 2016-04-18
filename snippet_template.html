@@ -1,0 +1,103 @@
+<li class="snippet">
+    <div class="item-photo">
+        <img src=<?php print '"'.$SnipPict.'"'; ?> width="165" height="109">
+    </div>
+    <div class="item-descr">
+        <div class="item-heading">
+            <span><?php print $Name; ?></span>
+        </div>
+        <div class="item-chars">
+            <div class="chars-col">
+                <div class="char-item">
+                    <img class="char-icon" src="pictos/video.png" width="16" height="16" alt="V">
+                    <div class="char-text">
+                        <span>
+                            <?php print $VResolution; ?>
+                        </span>
+                    </div>
+                </div>
+                <div class="char-item">
+                    <img class="char-icon" src="pictos/photo.png" width="16" height="16" alt="Ph">
+                    <div class="char-text">
+                        <span>
+                            <?php print $PhResolution; ?>
+                        </span>
+                    </div>
+                </div>
+                <div class="char-item">
+                    <img class="char-icon" src="pictos/battery.png" width="16" height="16" alt="B">
+                    <div class="char-text">
+                        <span>
+                            <?php print $Battery; ?>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="chars-col">
+                <div class="char-item">
+                    <img class="char-icon" src="pictos/matrix.png" width="16" height="16" alt="M">
+                    <div class="char-text">
+                        <span>
+                            <?php print $Matrix ?>
+                        </span>
+                    </div>
+                </div>
+                <div class="char-item">
+                    <img class="char-icon" src="pictos/lens.png" width="16" height="16" alt="L">
+                    <div class="char-text">
+                        <span>
+                            <?php print $Lens ?>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="chars-col">
+                <div class="char-item">
+                    <img class="char-icon" src="pictos/selfie.png" width="32" height="32" alt="M">
+                    <?php if ($Monopod): ?>
+                        <div class="char-text">
+                            <span>
+                                Monopod<br>in box
+                            </span>
+                        </div>
+                    <?php else: ?>
+                        <div class="char-text char-not-avaliable">
+                            <span>
+                                Monopod<br>not in box
+                            </span>
+                        </div>
+                    <?php endif; ?>
+                    
+                </div>
+                <div class="char-item">
+                    <img class="char-icon" src="pictos/fish.png" width="32" height="32" alt="L">
+                    <?php if ($Aquabox): ?>
+                        <div class="char-text">
+                            <span>
+                                Aquabox<br>in box
+                            </span>
+                        </div>
+                    <?php else: ?>
+                        <div class="char-text char-not-avaliable">
+                            <span>
+                                Aquabox<br>not in box
+                            </span>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-purchase-container">
+        <div class="purchase-btn purchase-btn-item">
+            <span>
+                <span>
+                    Купить
+                </span>
+                <span>
+                    6780<small class="currency-label">&thinsp;руб.</small>
+                </span>
+            </span>
+        </div>
+    </div>
+</li>
